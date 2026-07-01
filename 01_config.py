@@ -7,7 +7,7 @@ from pathlib import Path
 import cv2
 import json
 
-# ===================== 1. 全局路径配置（统一使用 dataset_self 作为自有数据集） =====================
+# ===================== 1. 全局路径配置=====================
 DATASET_ROOT = {
     "ShanghaiTech": r"D:\毕业设计\dataset\ShanghaiTech_Video_Frame",
     "UCSD": r"D:\毕业设计\dataset\UCSD_Anomaly_Dataset",
