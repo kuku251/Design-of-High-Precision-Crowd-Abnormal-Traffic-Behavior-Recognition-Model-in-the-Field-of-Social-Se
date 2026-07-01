@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 01_config.py - 导师最终要求版
+# 01_config.py
 # 自有数据集：dataset_self | 异常行为：5类（奔跑/徘徊/人群拥挤/车辆闯入/跌倒）+ 正常行走
 import os
 import pandas as pd
@@ -255,7 +255,6 @@ def main():
         return
 
     df = pd.DataFrame(all_anno)
-    # 严格过滤：只保留导师要求的6类
     df = df[df["anomaly_type"].isin(ANNOTATION_TYPES)]
 
     df.to_csv(FINAL_ANNOTATION_CSV, index=False, encoding="utf-8-sig")
